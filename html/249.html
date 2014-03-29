@@ -1,0 +1,252 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
+
+	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
+
+	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
+	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
+	
+	<script type="text/javascript">
+	function jsPopAct(url){
+		var form = document.memPopForm;
+		form.action = url;
+		form.submit();
+	}
+	function jsPopWrite(url){
+		var form = document.memPopForm;
+		if(Validator.validate(form)){
+			form.action = url;
+			form.submit();
+        }
+	}
+	function jsPopDelete(url){
+		var form = document.memPopForm;
+		if(confirm("삭제 하세겠습니까?")){
+			form.action = url;
+			form.submit();
+        }
+	}
+	
+	function jsInnerSite(){
+		alert("업무망에서는 외부링크를 열 수 없습니다.");
+		return false;
+	}
+	</script>
+	
+	
+</head>
+
+<body 
+	
+	
+	>
+ 	
+<form id="memPopForm" name="memPopForm" method="post">
+<input type="hidden" name="num" id="num" value="249">
+<input type="hidden" name="emp_nm" id="emp_nm" value="이주영">
+<input type="hidden" name="dept_cd" id="dept_cd" value="9770499">
+<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
+<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
+<input type="hidden" name="auth_lv" id="auth_lv" value="1">
+<div id="contentArea">
+<!-- mnapop_w -->
+<div id="mnapop_w">
+	<!-- 왼쪽메뉴 -->
+	<div class="snb">
+		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
+		<ul>
+            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
+			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
+        </ul>
+    </div>
+	<!-- //왼쪽메뉴 -->
+	
+	<div class="content">
+		<!-- 상단타이틀 -->
+		<div class="name_title">
+			<div class="name">
+				<h3>이주영 국회의원</h3>
+				<span>
+					
+					
+				</span>
+			</div>
+			<ul class="top_sns">
+				<li>
+					
+						
+							<a href="http://www.twitter.com/newmasan" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
+							</a>
+						
+					
+				</li>
+				<li>
+					
+						
+							<a href="http://www.facebook.com/newmasan315" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_facebook.gif" alt="페이스북 바로가기"  title="새창에서 열림"/>
+							</a>
+						
+					
+				</li>
+			</ul>
+			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
+        </div>
+		<!-- //상단타이틀 -->
+			
+			<!-- 의원실 알림내용 -->
+					<div class="cont_in">
+			<!-- 타이틀 -->
+			<div class="stitle">
+				<h3>국회의원 소개</h3>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="arrow">&gt;</li>
+					<li><a href="#">국회의원 소개</a></li>
+				</ul>
+			</div>
+			<!-- //타이틀 -->	
+			<!-- 국회의원 소개 상세내용 -->
+			<div class="info_mna">
+				<ul>
+					<li class="left">
+    					<!-- 프로필 -->
+    					<div class="profile">
+    						<h4>이주영</h4>
+							<ul>
+								<li class="photo">
+																		<img src="/photo/9770499.jpg" alt="이주영 의원사진" />
+								</li>
+								<li>李柱榮</li>
+								<li>LEE Ju-young</li>
+								<li>1951-09-30</li>
+							</ul>
+						</div>
+						<!-- //프로필 -->
+						<!-- 약력 -->
+						<dl class="per_history">
+							<dt>약력</dt>
+							<dd>
+								마산시 완월동 출생<br /> <br /><현직><br />4선 국회의원(제16,17,18,19 대)<br />국회 미래한국헌법연구회 공동대표<br /><br /><학력><br />마산완월초등학교입학<br />중앙중학교<br />경기고등학교<br />서울대 법대·대학원 졸업(법학석사)<br />경남대 북한대학원 졸업(정치학석사) <br />              <br /><경력><br />서울지법·서울고법 판사<br />영국 런던대학교 파견유학<br />대법원 재판연구관<br />부산지방법원 부장판사<br />경상남도 정무부지사<br />한나라당 원내부총무<br />         인권위원장<br />         수석정책조정위원장<br />         정책위의장<br />제17대 대통령선거 중앙선대위 정책상황실장<br />국회 사법제도개혁특별위원회 위원장<br />국회 예산결산특별위원회 위원장<br />새누리당 지역발전특별위원회 위원장<br />새누리당 정책위의장·비상대책위원
+							</dd>
+						</dl>
+						<!-- //약력 -->
+					</li>
+					<li class="right">
+						<dl class="pro_detail">
+							<dt>정당</dt>
+							<dd>새누리당</dd>
+							<dt>선거구</dt>
+							<dd>경남 창원시마산합포구</dd>
+							<dt>소속위원회</dt>
+							<dd>
+																									안전행정위원회
+																								</dd>
+							<dt>당선회수</dt>
+							<dd>4선(
+																									16대
+																			 ,
+																										17대
+																			 ,
+																										18대
+																			 ,
+																										19대
+																									)</dd>
+							<dt>사무실전화</dt>
+							<dd>
+																	02-784-5283
+                                								
+							</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.newmasan.com" target="_blank" title="새창에서 열림">http://www.newmasan.com</a></dd>
+							<dt>이메일</dt>
+							<dd>newmasan@assembly.go.kr</dd>
+							<dt>보좌관</dt>
+							<dd>
+								    								    									백종진
+    									    										 ,
+    									    								    									신상대
+    									    																							</dd>
+							<dt>비서관</dt>
+							<dd>
+								    								    									김성락
+    									    																							</dd>
+							<dt>비서</dt>
+							<dd>
+								    								    									강문규
+    									    										 ,
+    									    								    									이상철
+    									    										 ,
+    									    								    									유주형
+    									    																							</dd>
+							<dt>취미, 특기</dt>
+							<dd>등산</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- //국회의원 소개 상세내용 -->
+		</div>
+<script>
+function jsShowContent(url){
+	var cpage = url;
+	var fdata = $("#memPopForm").serializeArray();
+	if (cpage != "") {
+		jQuery.ajax
+		({
+			url: cpage,
+			data: fdata,
+			type: 'POST', 
+			cache : false,
+			dataType: 'html',
+			success: function(rtnData) {
+				$("#contentArea").html(rtnData);
+			}
+		});
+	}
+}
+</script>
+
+
+			<!-- //의원실 알림내용 -->
+	</div>
+	<!-- //서브내용 영역 -->
+</div>
+<!-- //mnapop_w -->
+</div>
+</form>
+</html>

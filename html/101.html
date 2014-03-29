@@ -1,0 +1,252 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
+
+	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
+
+	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
+	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
+	
+	<script type="text/javascript">
+	function jsPopAct(url){
+		var form = document.memPopForm;
+		form.action = url;
+		form.submit();
+	}
+	function jsPopWrite(url){
+		var form = document.memPopForm;
+		if(Validator.validate(form)){
+			form.action = url;
+			form.submit();
+        }
+	}
+	function jsPopDelete(url){
+		var form = document.memPopForm;
+		if(confirm("삭제 하세겠습니까?")){
+			form.action = url;
+			form.submit();
+        }
+	}
+	
+	function jsInnerSite(){
+		alert("업무망에서는 외부링크를 열 수 없습니다.");
+		return false;
+	}
+	</script>
+	
+	
+</head>
+
+<body 
+	
+	
+	>
+ 	
+<form id="memPopForm" name="memPopForm" method="post">
+<input type="hidden" name="num" id="num" value="101">
+<input type="hidden" name="emp_nm" id="emp_nm" value="신학용">
+<input type="hidden" name="dept_cd" id="dept_cd" value="9770367">
+<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
+<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
+<input type="hidden" name="auth_lv" id="auth_lv" value="1">
+<div id="contentArea">
+<!-- mnapop_w -->
+<div id="mnapop_w">
+	<!-- 왼쪽메뉴 -->
+	<div class="snb">
+		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
+		<ul>
+            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
+			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
+        </ul>
+    </div>
+	<!-- //왼쪽메뉴 -->
+	
+	<div class="content">
+		<!-- 상단타이틀 -->
+		<div class="name_title">
+			<div class="name">
+				<h3>신학용 국회의원</h3>
+				<span>
+					
+					
+				</span>
+			</div>
+			<ul class="top_sns">
+				<li>
+					
+						
+							<a href="http://www.twitter.com/loveincheon" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
+							</a>
+						
+					
+				</li>
+				<li>
+					
+						
+							<a href="http://www.facebook.com/incheonlove" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_facebook.gif" alt="페이스북 바로가기"  title="새창에서 열림"/>
+							</a>
+						
+					
+				</li>
+			</ul>
+			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
+        </div>
+		<!-- //상단타이틀 -->
+			
+			<!-- 의원실 알림내용 -->
+					<div class="cont_in">
+			<!-- 타이틀 -->
+			<div class="stitle">
+				<h3>국회의원 소개</h3>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="arrow">&gt;</li>
+					<li><a href="#">국회의원 소개</a></li>
+				</ul>
+			</div>
+			<!-- //타이틀 -->	
+			<!-- 국회의원 소개 상세내용 -->
+			<div class="info_mna">
+				<ul>
+					<li class="left">
+    					<!-- 프로필 -->
+    					<div class="profile">
+    						<h4>신학용</h4>
+							<ul>
+								<li class="photo">
+																		<img src="/photo/9770367.jpg" alt="신학용 의원사진" />
+								</li>
+								<li>辛鶴用</li>
+								<li>SHIN Hak Yong</li>
+								<li>1952-01-21</li>
+							</ul>
+						</div>
+						<!-- //프로필 -->
+						<!-- 약력 -->
+						<dl class="per_history">
+							<dt>약력</dt>
+							<dd>
+								서울대 정치학과 졸업<br />서울대 사회과학대학원 정치학과 수료<br />법원행정고시 합격/대구지법, 인천지법, 대법원 근무/법무사<br />김대중대통령 법률특별보좌역<br />열린우리당 원내부대표 <br />열린우리당 당의장특보<br />열린우리당 수도권발전특위 인천위원장 <br />열린우리당 서민금융정책기획단위원<br />열린우리당 문화중심도시추진위원 <br />열린우리당 생명공학연구지원및 윤리대책특위위원<br />열린우리당 클린선거대책특위위원<br />국회정무위원<br />국회운영위원<br />국회금융정책연구회장<br />국회기후변화협약대책특위위원<br />국회중국의고구려사왜곡대책특위위원<br />국회환경경제연구회원<br />국회과거사청산을위한 모임회원<br />한국실업탁구연맹회장<br />부평동초등학교 총동문회장 <br />사회복지법인 인천광명학원(시각장애인학교)감사<br />대한법무사협회장
+							</dd>
+						</dl>
+						<!-- //약력 -->
+					</li>
+					<li class="right">
+						<dl class="pro_detail">
+							<dt>정당</dt>
+							<dd>새정치민주연합</dd>
+							<dt>선거구</dt>
+							<dd>인천 계양구갑</dd>
+							<dt>소속위원회</dt>
+							<dd>
+																									교육문화체육관광위원회
+																								</dd>
+							<dt>당선회수</dt>
+							<dd>3선(
+																									17대
+																			 ,
+																										18대
+																			 ,
+																										19대
+																									)</dd>
+							<dt>사무실전화</dt>
+							<dd>
+																	02-788-2165
+                                								
+							</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.seen.or.kr" target="_blank" title="새창에서 열림">http://www.seen.or.kr</a></dd>
+							<dt>이메일</dt>
+							<dd>hyshin7129@hanmail.net</dd>
+							<dt>보좌관</dt>
+							<dd>
+								    								    									서보건
+    									    										 ,
+    									    								    									조계자
+    									    																							</dd>
+							<dt>비서관</dt>
+							<dd>
+								    								    									임미옥
+    									    										 ,
+    									    								    									최원
+    									    																							</dd>
+							<dt>비서</dt>
+							<dd>
+								    								    									진숙경
+    									    										 ,
+    									    								    									조현진
+    									    										 ,
+    									    								    									김병철
+    									    																							</dd>
+							<dt>취미, 특기</dt>
+							<dd>등산테니스</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- //국회의원 소개 상세내용 -->
+		</div>
+<script>
+function jsShowContent(url){
+	var cpage = url;
+	var fdata = $("#memPopForm").serializeArray();
+	if (cpage != "") {
+		jQuery.ajax
+		({
+			url: cpage,
+			data: fdata,
+			type: 'POST', 
+			cache : false,
+			dataType: 'html',
+			success: function(rtnData) {
+				$("#contentArea").html(rtnData);
+			}
+		});
+	}
+}
+</script>
+
+
+			<!-- //의원실 알림내용 -->
+	</div>
+	<!-- //서브내용 영역 -->
+</div>
+<!-- //mnapop_w -->
+</div>
+</form>
+</html>

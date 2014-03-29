@@ -1,0 +1,244 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
+
+	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
+
+	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
+	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
+	
+	<script type="text/javascript">
+	function jsPopAct(url){
+		var form = document.memPopForm;
+		form.action = url;
+		form.submit();
+	}
+	function jsPopWrite(url){
+		var form = document.memPopForm;
+		if(Validator.validate(form)){
+			form.action = url;
+			form.submit();
+        }
+	}
+	function jsPopDelete(url){
+		var form = document.memPopForm;
+		if(confirm("삭제 하세겠습니까?")){
+			form.action = url;
+			form.submit();
+        }
+	}
+	
+	function jsInnerSite(){
+		alert("업무망에서는 외부링크를 열 수 없습니다.");
+		return false;
+	}
+	</script>
+	
+	
+</head>
+
+<body 
+	
+	
+	>
+ 	
+<form id="memPopForm" name="memPopForm" method="post">
+<input type="hidden" name="num" id="num" value="2756">
+<input type="hidden" name="emp_nm" id="emp_nm" value="조원진">
+<input type="hidden" name="dept_cd" id="dept_cd" value="9770648">
+<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
+<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
+<input type="hidden" name="auth_lv" id="auth_lv" value="1">
+<div id="contentArea">
+<!-- mnapop_w -->
+<div id="mnapop_w">
+	<!-- 왼쪽메뉴 -->
+	<div class="snb">
+		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
+		<ul>
+            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
+			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
+        </ul>
+    </div>
+	<!-- //왼쪽메뉴 -->
+	
+	<div class="content">
+		<!-- 상단타이틀 -->
+		<div class="name_title">
+			<div class="name">
+				<h3>조원진 국회의원</h3>
+				<span>
+					
+					
+				</span>
+			</div>
+			<ul class="top_sns">
+				<li>
+					
+						
+							<a href="http://www.twitter.com/cho_wonjin" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
+							</a>
+						
+					
+				</li>
+				<li>
+					
+						
+							<a href="http://www.facebook.com/chowonjin88" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_facebook.gif" alt="페이스북 바로가기"  title="새창에서 열림"/>
+							</a>
+						
+					
+				</li>
+			</ul>
+			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
+        </div>
+		<!-- //상단타이틀 -->
+			
+			<!-- 의원실 알림내용 -->
+					<div class="cont_in">
+			<!-- 타이틀 -->
+			<div class="stitle">
+				<h3>국회의원 소개</h3>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="arrow">&gt;</li>
+					<li><a href="#">국회의원 소개</a></li>
+				</ul>
+			</div>
+			<!-- //타이틀 -->	
+			<!-- 국회의원 소개 상세내용 -->
+			<div class="info_mna">
+				<ul>
+					<li class="left">
+    					<!-- 프로필 -->
+    					<div class="profile">
+    						<h4>조원진</h4>
+							<ul>
+								<li class="photo">
+																		<img src="/photo/9770648.jpg" alt="조원진 의원사진" />
+								</li>
+								<li>趙源震</li>
+								<li>CHO Won jin</li>
+								<li>1959-01-07</li>
+							</ul>
+						</div>
+						<!-- //프로필 -->
+						<!-- 약력 -->
+						<dl class="per_history">
+							<dt>약력</dt>
+							<dd>
+								<학력><br /><br />대구 종로초등학교 졸업<br />대구 협성중학교 졸업<br />대구 청구고등학교 입학<br />서울 인창고등학교 졸업<br />한국외국어대학교 정치외교학과 졸업<br />영남대학교 행정대학원 졸업<br /><br /><약력><br /><br />국회 예산결산특별위원회 위원(現)<br />국회 정무위원회 새누리당 위원(現)<br /><br />제19대 대통령선거 새누리당 중앙선거대책위원회 종합상황실 불법선거감시단장<br />새누리당 전략기획본부장<br />새누리당 외교역량강화특위 위원<br /><br />한중정치경제포럼 대표의원<br />한국패션산업그린포럼 정회원<br />생활체육과국민행복 정회원<br /><br />한중의회정기교류체제 간사장<br />방글라데시 친선협회 회장<br />몽골 친선협회 이사<br /><br />대구 달서병 당협위원장<br /><br />육군하사 전역<br />황병태 국회의원 보좌관(前)<br />대우 중국기획조사부장(前)<br />OKTA(세계해외한인무역협회) 북경지회장 및 상임이사(前)<br />영남대학교 행정대학원 총동창회장(前)<br />국회 환경노동위원회 한나라당 간사(前)<br />한나라당 조직강화특위 위원(前)<br />한나라당 제5회 지방선거 중앙당 공천심사위원회 위원(前)<br />한나라당 원내부대표(前)<br />한-중 의원외교협의회 회원(前)<br />한-아제르바이잔 의원친선협회 부회장(前)<br />한나라당 대구시당 수석부위원장(前)<br />18대 국회 정치개혁특별위원회 위원(前)<br />재중국한국인회 부회장(前)<br /><br />고령·예천군 명예군민<br />제주도 명예도민<br /><br />(사)전국산재장애인단체연합회<br />대구산재장애인협회 고문<br />대구시 공수도연맹 고문<br />대구경북 사회인야구연합회 초대명예회장<br />국민생활체육 전국족구연합회(대구시) 고문<br />대구시 달서구 족구연합회 고문<br />대구시 달서구 태권도연합회 고문<br />대구시 척수장애인연합회 고문<br />대구시 시각장애인연합회 고문<br />국민건강보험공단달서지사 명예지사장 <br />한국청소년지도자연합회 달서상월지회 고문<br />달서소방서 명예소방 서장<br />새나라복지포럼 고문<br />국제문화체육진흥회 고문<br />대구카톨릭대 산학협력교수 위촉<br />국제당수도연맹 상임고문<br />한중우호협회 고문
+							</dd>
+						</dl>
+						<!-- //약력 -->
+					</li>
+					<li class="right">
+						<dl class="pro_detail">
+							<dt>정당</dt>
+							<dd>새누리당</dd>
+							<dt>선거구</dt>
+							<dd>대구 달서구병</dd>
+							<dt>소속위원회</dt>
+							<dd>
+																									정무위원회
+																			 ,
+																										정보위원회
+																								</dd>
+							<dt>당선회수</dt>
+							<dd>재선(
+																									18대
+																			 ,
+																										19대
+																									)</dd>
+							<dt>사무실전화</dt>
+							<dd>
+																	02-788-2361
+                                								
+							</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.chowonjin.com" target="_blank" title="새창에서 열림">http://www.chowonjin.com</a></dd>
+							<dt>이메일</dt>
+							<dd>johj98@assembly.go.kr</dd>
+							<dt>보좌관</dt>
+							<dd>
+																	이상택, 임지홍
+															</dd>
+							<dt>비서관</dt>
+							<dd>
+																	정태준, 정희달
+															</dd>
+							<dt>비서</dt>
+							<dd>
+																	김성훈, 우경란, 이민지, 이장혁, 박선영
+															</dd>
+							<dt>취미, 특기</dt>
+							<dd>등산/스케이트</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- //국회의원 소개 상세내용 -->
+		</div>
+<script>
+function jsShowContent(url){
+	var cpage = url;
+	var fdata = $("#memPopForm").serializeArray();
+	if (cpage != "") {
+		jQuery.ajax
+		({
+			url: cpage,
+			data: fdata,
+			type: 'POST', 
+			cache : false,
+			dataType: 'html',
+			success: function(rtnData) {
+				$("#contentArea").html(rtnData);
+			}
+		});
+	}
+}
+</script>
+
+
+			<!-- //의원실 알림내용 -->
+	</div>
+	<!-- //서브내용 영역 -->
+</div>
+<!-- //mnapop_w -->
+</div>
+</form>
+</html>
