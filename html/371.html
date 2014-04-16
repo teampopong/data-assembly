@@ -1,0 +1,254 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
+
+	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
+
+	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
+	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
+	
+	<script type="text/javascript">
+	function jsPopAct(url){
+		var form = document.memPopForm;
+		form.action = url;
+		form.submit();
+	}
+	function jsPopWrite(url){
+		var form = document.memPopForm;
+		if(Validator.validate(form)){
+			form.action = url;
+			form.submit();
+        }
+	}
+	function jsPopDelete(url){
+		var form = document.memPopForm;
+		if(confirm("삭제 하세겠습니까?")){
+			form.action = url;
+			form.submit();
+        }
+	}
+	
+	function jsInnerSite(){
+		alert("업무망에서는 외부링크를 열 수 없습니다.");
+		return false;
+	}
+	</script>
+	
+	
+</head>
+
+<body 
+	
+	
+	>
+ 	
+<form id="memPopForm" name="memPopForm" method="post">
+<input type="hidden" name="num" id="num" value="371">
+<input type="hidden" name="emp_nm" id="emp_nm" value="김영환">
+<input type="hidden" name="dept_cd" id="dept_cd" value="9770684">
+<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
+<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
+<input type="hidden" name="auth_lv" id="auth_lv" value="1">
+<div id="contentArea">
+<!-- mnapop_w -->
+<div id="mnapop_w">
+	<!-- 왼쪽메뉴 -->
+	<div class="snb">
+		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
+		<ul>
+            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
+			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
+        </ul>
+    </div>
+	<!-- //왼쪽메뉴 -->
+	
+	<div class="content">
+		<!-- 상단타이틀 -->
+		<div class="name_title">
+			<div class="name">
+				<h3>김영환 국회의원</h3>
+				<span>
+					
+					
+				</span>
+			</div>
+			<ul class="top_sns">
+				<li>
+					
+						
+							<a href="http://www.twitter.com/kyh21" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
+							</a>
+						
+					
+				</li>
+				<li>
+					
+						
+							<a href="http://www.facebook.com/kimyh21" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_facebook.gif" alt="페이스북 바로가기"  title="새창에서 열림"/>
+							</a>
+						
+					
+				</li>
+			</ul>
+			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
+        </div>
+		<!-- //상단타이틀 -->
+			
+			<!-- 의원실 알림내용 -->
+					<div class="cont_in">
+			<!-- 타이틀 -->
+			<div class="stitle">
+				<h3>국회의원 소개</h3>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="arrow">&gt;</li>
+					<li><a href="#">국회의원 소개</a></li>
+				</ul>
+			</div>
+			<!-- //타이틀 -->	
+			<!-- 국회의원 소개 상세내용 -->
+			<div class="info_mna">
+				<ul>
+					<li class="left">
+    					<!-- 프로필 -->
+    					<div class="profile">
+    						<h4>김영환</h4>
+							<ul>
+								<li class="photo">
+																		<img src="/photo/9770684.jpg" alt="김영환 의원사진" />
+								</li>
+								<li>金榮煥</li>
+								<li>KIM Young Hwan</li>
+								<li>1955-05-27</li>
+							</ul>
+						</div>
+						<!-- //프로필 -->
+						<!-- 약력 -->
+						<dl class="per_history">
+							<dt>약력</dt>
+							<dd>
+								o 출생지<br />  - 충청북도 괴산 출생(1955년생)<br /> <br />o 주요학력<br />  - 청주고등학교 졸업<br />  - 연세대학교 치과대학 졸업 (15년 만에) <br />  - 연세대학교 경제대학원 석사<br /> <br />o 주요경력<br />  - 민주화 운동으로 20개월간 투옥 <br />  - <광주민주화운동>으로 1년간 현상수배 <br />  - 5년간 노동자 생활/전기공사 기사1급 등 6개의 각종 자격증 취득 <br />   (전기공사기사 1, 2급, 소방설비기사 2급, 전기주임안전관리기사 2급, 전기      공사기능사 2급, 전기공사주임기사) <br />  - <詩人>, <문학의 시대>를 통해 문단 데뷔 <br />  - 15대·16대·18대 국회의원<br />  - 現 19대 국회의원 (정무위원회)<br />  - 現 민주당 인재영입위원장<br />  - 과학기술부 장관(전)<br />  - 국회 지식경제위원회 위원장(전)<br />  - 새천년민주당 대변인/정책위의장/최고위원(전)<br />  - 광주민주유공자<br />  - 새시대새정치연합청년회(연청) 중앙회장(전)<br />  - 영국 캠브리지대학 방문연구원(전)<br /> <br /><br /> o 수상경력<br />  - 1999년  과학기술정보통신위 최우수상(한국유권자운동연합) <br />  - 1999년  녹색정치인상 수상(환경운동연합)<br />  - 2000년  남녀평등정치인상 수상(한국여성유권자연맹) <br />  - 2002년  여성생명과학상 공로상 수상<br />  - 2003년  청조근정훈장 수훈<br />  - 2010년  최우수 상임위원장(NGO 선정)<br />  - 2011년  최우수 상임위원장(NGO 선정)<br />  - 2011년  최우수 상임위원장(민주통합당 선정)<br />  - 2011년  초정 大賞(소상공인단체연합회 선정)<br />  - 2011년  동반성장위원회 감사패(국회의원 중 유일하게 수상)<br />  - 2011년  최우수 과학기술 국회의원(과학기술계(과실연) 선정) <br />  - 2011년  정책 大賞(한국콘텐츠학회 선정)<br />  - 2011년  중소기업 지원 大賞(중소기업중앙회 선정)<br />  - 2011년  최우수 상임위원장(문화예술 유권자연합회)<br />  - 2011년  과학기술분야 의정활동 우수의원<br />            (한국과학기술단체총연합회(과기총) 선정)<br />  - 2012년  국정감사 우수의원(NGO 선정)<br />  - 2012년  초정 大賞(소상공인단체연합회 선정)  <br />  - 2013년  국정감사 우수의원(NGO 선정)<br />  <br /><br />o 주요저서<br />[시집]<br />  - 《따라오라 시여》, (1988, 시인사)<br />  - 《지난날의 꿈이 나를 밀어간다》, (1994, 실천문학사)<br />  - 《꽃과 운명》, (2000, 푸른숲)<br />  - 《똥 먹는 아빠》, (1997, 산하출판사), 증보개정판(2010, 생각의나무)<br />  - 과학 동시집 《방귀에 불이 붙을까요?》, (2001, 김영사), 개정판(2010, 생각의나무)<br />  - 《불타는 바그다드의 어머니》, (2003, 명상)<br />  - 《물왕리에서 우리가 마신 것은 사랑이었습니다》, (2003, 명상)<br />  - 《돌관자여, 흐르는 강물에 갈퀴손을 씻으라》, (2010, 생각의나무)<br />  - 《눈부신 외로움》, (2010, 생각의나무)<br /><br /> [수필집]<br />  - 《그대를 위한 사랑의 노래》, (1996, 살림터)<br />  - 《홀로 선 당신이 아름답습니다》, (1999, 중앙M&B)<br />  - 《원망(怨望)은 물에 새기고 사랑은 돌에 새기라》, (2003,명상)<br />  - 《최초에 도전하라》, (2010, 생각의 나무)<br />  - 《지난날의 꿈이 나를 밀어간다》, (2011, 쌤앤파커스)<br />  - 《나라를 살리는 10가지 생각창고》, (2012, 쌤앤파커스)<br />  - 《두눈박이의 이력서》, (2012, 작가세계)<br />  - 《잔도를 불태워라》, (2013, 두리미디어)<br />  - 《상상력을 디자인하다》, (2013, 블랙쉽)<br /> <br /> [평론집]<br />  - 《덧셈의 정치, 뺄셈의 정치》, (2006, 나무와 숲)<br />
+							</dd>
+						</dl>
+						<!-- //약력 -->
+					</li>
+					<li class="right">
+						<dl class="pro_detail">
+							<dt>정당</dt>
+							<dd>새정치민주연합</dd>
+							<dt>선거구</dt>
+							<dd>경기 안산시상록구을</dd>
+							<dt>소속위원회</dt>
+							<dd>
+																									정무위원회
+																								</dd>
+							<dt>당선회수</dt>
+							<dd>4선(
+																									15대
+																			 ,
+																										16대
+																			 ,
+																										18대
+																			 ,
+																										19대
+																									)</dd>
+							<dt>사무실전화</dt>
+							<dd>
+																	02-784-5020~2, 02-788-2613
+                                								
+							</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.kyh21.net" target="_blank" title="새창에서 열림">http://www.kyh21.net</a></dd>
+							<dt>이메일</dt>
+							<dd>digitalmr@hanmail.net</dd>
+							<dt>보좌관</dt>
+							<dd>
+								    								    									김동원
+    									    										 ,
+    									    								    									오진웅
+    									    																							</dd>
+							<dt>비서관</dt>
+							<dd>
+								    								    									기길동
+    									    										 ,
+    									    								    									유승찬
+    									    																							</dd>
+							<dt>비서</dt>
+							<dd>
+								    								    									유석종
+    									    										 ,
+    									    								    									이현승
+    									    										 ,
+    									    								    									서정선
+    									    																							</dd>
+							<dt>취미, 특기</dt>
+							<dd>독서</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- //국회의원 소개 상세내용 -->
+		</div>
+<script>
+function jsShowContent(url){
+	var cpage = url;
+	var fdata = $("#memPopForm").serializeArray();
+	if (cpage != "") {
+		jQuery.ajax
+		({
+			url: cpage,
+			data: fdata,
+			type: 'POST', 
+			cache : false,
+			dataType: 'html',
+			success: function(rtnData) {
+				$("#contentArea").html(rtnData);
+			}
+		});
+	}
+}
+</script>
+
+
+			<!-- //의원실 알림내용 -->
+	</div>
+	<!-- //서브내용 영역 -->
+</div>
+<!-- //mnapop_w -->
+</div>
+</form>
+</html>

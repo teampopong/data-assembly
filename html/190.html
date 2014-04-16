@@ -1,0 +1,248 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
+
+	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
+	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
+
+	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
+	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
+	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
+	
+	<script type="text/javascript">
+	function jsPopAct(url){
+		var form = document.memPopForm;
+		form.action = url;
+		form.submit();
+	}
+	function jsPopWrite(url){
+		var form = document.memPopForm;
+		if(Validator.validate(form)){
+			form.action = url;
+			form.submit();
+        }
+	}
+	function jsPopDelete(url){
+		var form = document.memPopForm;
+		if(confirm("삭제 하세겠습니까?")){
+			form.action = url;
+			form.submit();
+        }
+	}
+	
+	function jsInnerSite(){
+		alert("업무망에서는 외부링크를 열 수 없습니다.");
+		return false;
+	}
+	</script>
+	
+	
+</head>
+
+<body 
+	
+	
+	>
+ 	
+<form id="memPopForm" name="memPopForm" method="post">
+<input type="hidden" name="num" id="num" value="190">
+<input type="hidden" name="emp_nm" id="emp_nm" value="박주선">
+<input type="hidden" name="dept_cd" id="dept_cd" value="9770566">
+<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
+<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
+<input type="hidden" name="auth_lv" id="auth_lv" value="1">
+<div id="contentArea">
+<!-- mnapop_w -->
+<div id="mnapop_w">
+	<!-- 왼쪽메뉴 -->
+	<div class="snb">
+		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
+		<ul>
+            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
+			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
+            
+            
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
+            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
+        </ul>
+    </div>
+	<!-- //왼쪽메뉴 -->
+	
+	<div class="content">
+		<!-- 상단타이틀 -->
+		<div class="name_title">
+			<div class="name">
+				<h3>박주선 국회의원</h3>
+				<span>
+					
+					
+				</span>
+			</div>
+			<ul class="top_sns">
+				<li>
+					
+						
+							<a href="http://www.twitter.com/ParkJooSun" target="_blank">
+								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
+							</a>
+						
+					
+				</li>
+				<li>
+					
+				</li>
+			</ul>
+			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
+        </div>
+		<!-- //상단타이틀 -->
+			
+			<!-- 의원실 알림내용 -->
+					<div class="cont_in">
+			<!-- 타이틀 -->
+			<div class="stitle">
+				<h3>국회의원 소개</h3>
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li class="arrow">&gt;</li>
+					<li><a href="#">국회의원 소개</a></li>
+				</ul>
+			</div>
+			<!-- //타이틀 -->	
+			<!-- 국회의원 소개 상세내용 -->
+			<div class="info_mna">
+				<ul>
+					<li class="left">
+    					<!-- 프로필 -->
+    					<div class="profile">
+    						<h4>박주선</h4>
+							<ul>
+								<li class="photo">
+																		<img src="/photo/9770566.jpg" alt="박주선 의원사진" />
+								</li>
+								<li>朴柱宣</li>
+								<li>PARK Joo Sun</li>
+								<li>1949-07-23</li>
+							</ul>
+						</div>
+						<!-- //프로필 -->
+						<!-- 약력 -->
+						<dl class="per_history">
+							<dt>약력</dt>
+							<dd>
+								광주고등학교 졸업<br />서울대학교 법학과 졸업<br />서울대학교 법학과대학원 석사과정 2년 수료<br /><br />1974.03 제16회 사법시험 수석합격<br />1976.10~1979.10 육군 법무관<br />1979 서울지검 검사<br />1983 제주대학교 강사<br />1989.03~1990.11 광주지방검찰청 해남지청장 , '동백장학회' 설립<br />1993 대검 중수1,2,3과장 <br />1995 서울지검 특수1,2부장검사<br />1997.08~1998.02 대검찰청 수사기획관 (DJ비자금 수사 유보 결정) <br />1998.02~1999.11 대통령 법무비서관<br />2000.05.30~ 16대 국회의원(전남 화순/보성), 새천년민주당 총재 특보<br />2002.05.09~ 새천년민주당 제1정책조정위원장<br />2003.01~ 새천년민주당 개혁특별위원회 위원<br />2003.02~ 노무현 대통령 당선자 중국특사, 국회 정치개혁특별위원회 위원<br />2003.09~ 새천년민주당 기획조정위원장<br />2003.11.12 새천년민주당 전국 대의원 대회 준비위원장<br />2003.11.12 새천년민주당 사무총장 직무대행<br />2005.12~ 민주당 인사영입 위원장<br />2005.12.25 세계일보 선정 올해의 인물 <br />2006 조선대학교 초빙교수<br />2006.4~ 제4회 전국동시지방선거 서울시장 후보<br />2007.4.13  민주당 중앙위원<br />2007.8.14  광주동구 지역위원회 위원장<br />2007.10.26 제17대 대통령선거 광주선거대책위원회 상임위원장 및 후보특보단장<br />2008.04.09 제18대 국회의원 (전국 최고득표율 88.7%)<br />2008.07.06 민주당 최고위원 <br />2008.07.08 현, 국회 환경포럼 대표<br />2008.08.27 현, 외교통일통상위원회 위원<br />2008.9.1 - 2009.8.31 북한대학원대학교 초빙교수<br />2009.01.13 민주당 국회유린 및 야당탄압저지대책위원회 위원장<br />2009.02 6.15공동선언실천 남측위원회 공동대표<br />2009.03.17 민주당 복지지원금 집행비리 진상조사 특위 위원장<br />2009.03.30 민주주의수호 및 공안탄압저지 대책위원회 위원장<br />2009.04 4.29 재보궐선거 호남 선거대책본부장<br />2009.06.01 이명박 정권 정치보복 진상규명 특위 위원장<br />2009.09.14 민주당 임진강참사 진상조사단 위원장<br />2009.10.30 민주당 무효언론악법폐지투쟁위원회 위원장<br />2009.12.07 한명숙 상임고문 공안탄압대책위원회 위원장<br />2010.03. 국회 사법개혁특위 위원, 검찰개혁소위 위원장<br />2010.05. 6.2 지방선거 한명숙 서울시장 후보 공동선거대책위원장<br />2010.10.03 민주당 최고위원<br />2011.03.07 현, 국회남북관계특별위원회 위원장<br />2011.09.23 민주당 이명박정부권력형비리진상조사위원회 위원장
+							</dd>
+						</dl>
+						<!-- //약력 -->
+					</li>
+					<li class="right">
+						<dl class="pro_detail">
+							<dt>정당</dt>
+							<dd>새정치민주연합</dd>
+							<dt>선거구</dt>
+							<dd>광주 동구</dd>
+							<dt>소속위원회</dt>
+							<dd>
+																									외교통일위원회
+																			 ,
+																										예산결산특별위원회
+																								</dd>
+							<dt>당선회수</dt>
+							<dd>3선(
+																									16대
+																			 ,
+																										18대
+																			 ,
+																										19대
+																									)</dd>
+							<dt>사무실전화</dt>
+							<dd>
+																	02-784-5288
+                                								
+							</dd>
+							<dt>홈페이지</dt>
+							<dd><a href="http://www.parkjoosun.pe.kr" target="_blank" title="새창에서 열림">http://www.parkjoosun.pe.kr</a></dd>
+							<dt>이메일</dt>
+							<dd>jsp@na.go.kr</dd>
+							<dt>보좌관</dt>
+							<dd>
+								    								    									김중한
+    									    										 ,
+    									    								    									이미숙
+    									    																							</dd>
+							<dt>비서관</dt>
+							<dd>
+								    								    									하정훈
+    									    										 ,
+    									    								    									한상범
+    									    																							</dd>
+							<dt>비서</dt>
+							<dd>
+								    								    									박영식
+    									    										 ,
+    									    								    									정은자
+    									    										 ,
+    									    								    									최호연
+    									    																							</dd>
+							<dt>취미, 특기</dt>
+							<dd>등산</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- //국회의원 소개 상세내용 -->
+		</div>
+<script>
+function jsShowContent(url){
+	var cpage = url;
+	var fdata = $("#memPopForm").serializeArray();
+	if (cpage != "") {
+		jQuery.ajax
+		({
+			url: cpage,
+			data: fdata,
+			type: 'POST', 
+			cache : false,
+			dataType: 'html',
+			success: function(rtnData) {
+				$("#contentArea").html(rtnData);
+			}
+		});
+	}
+}
+</script>
+
+
+			<!-- //의원실 알림내용 -->
+	</div>
+	<!-- //서브내용 영역 -->
+</div>
+<!-- //mnapop_w -->
+</div>
+</form>
+</html>
