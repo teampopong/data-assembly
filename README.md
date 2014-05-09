@@ -3,9 +3,13 @@ National Assembly members' data
 
 South Korean National Assembly members' data.
 
-- 19th session, 2012-2016.
-
-**This repository is automatically updated daily.**
+## Data description
+- assembly.\*
+    - National Assembly members' demographic data.
+        - 19th session, 2012-2016.
+    - **These files are automatically updated daily.**
+- twitter.csv
+    - National Assembly members' Twitter accounts.
 
 ## Data source
 http://www.assembly.go.kr/renew10/mem/mem/mem_search.jsp
