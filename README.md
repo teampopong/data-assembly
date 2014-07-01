@@ -3,6 +3,8 @@ National Assembly members' data
 
 South Korean National Assembly members' data.
 
+> For more data and APIs on Korean politics and legislations, please visit [data.popong.com](http://data.popong.com).
+
 ## Data description
 - assembly.\*
     - National Assembly members' demographic data.
