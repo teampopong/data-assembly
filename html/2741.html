@@ -1,242 +1,0 @@
-
-
-
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title></title>
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
-
-	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
-
-	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
-	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
-	
-	<script type="text/javascript">
-	function jsPopAct(url){
-		var form = document.memPopForm;
-		form.action = url;
-		form.submit();
-	}
-	function jsPopWrite(url){
-		var form = document.memPopForm;
-		if(Validator.validate(form)){
-			form.action = url;
-			form.submit();
-        }
-	}
-	function jsPopDelete(url){
-		var form = document.memPopForm;
-		if(confirm("삭제 하세겠습니까?")){
-			form.action = url;
-			form.submit();
-        }
-	}
-	
-	function jsInnerSite(){
-		alert("업무망에서는 외부링크를 열 수 없습니다.");
-		return false;
-	}
-	</script>
-	
-	
-</head>
-
-<body 
-	
-	
-	>
- 	
-<form id="memPopForm" name="memPopForm" method="post">
-<input type="hidden" name="num" id="num" value="2741">
-<input type="hidden" name="emp_nm" id="emp_nm" value="박상은">
-<input type="hidden" name="dept_cd" id="dept_cd" value="9770559">
-<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
-<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
-<input type="hidden" name="auth_lv" id="auth_lv" value="1">
-<div id="contentArea">
-<!-- mnapop_w -->
-<div id="mnapop_w">
-	<!-- 왼쪽메뉴 -->
-	<div class="snb">
-		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
-		<ul>
-            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
-			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
-        </ul>
-    </div>
-	<!-- //왼쪽메뉴 -->
-	
-	<div class="content">
-		<!-- 상단타이틀 -->
-		<div class="name_title">
-			<div class="name">
-				<h3>박상은 국회의원</h3>
-				<span>
-					
-					
-				</span>
-			</div>
-			<ul class="top_sns">
-				<li>
-					
-				</li>
-				<li>
-					
-				</li>
-			</ul>
-			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
-        </div>
-		<!-- //상단타이틀 -->
-			
-			<!-- 의원실 알림내용 -->
-					<div class="cont_in">
-			<!-- 타이틀 -->
-			<div class="stitle">
-				<h3>국회의원 소개</h3>
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li class="arrow">&gt;</li>
-					<li><a href="#">국회의원 소개</a></li>
-				</ul>
-			</div>
-			<!-- //타이틀 -->	
-			<!-- 국회의원 소개 상세내용 -->
-			<div class="info_mna">
-				<ul>
-					<li class="left">
-    					<!-- 프로필 -->
-    					<div class="profile">
-    						<h4>박상은</h4>
-							<ul>
-								<li class="photo">
-																		<img src="/photo/9770559.jpg" alt="박상은 의원사진" />
-								</li>
-								<li>朴商銀</li>
-								<li>PARK Sang Eun</li>
-								<li>1949-09-01</li>
-							</ul>
-						</div>
-						<!-- //프로필 -->
-						<!-- 약력 -->
-						<dl class="per_history">
-							<dt>약력</dt>
-							<dd>
-								&#8226; 제18대 국회의원, 국토해양위원회 위원(현)<br />&#8226; 바다와경제 국회포럼 공동대표(현)<br /><br />&#8226; 경동고등학교 졸업<br />&#8226; 연세대학교 법학과 졸업 <br />&#8226; 연세대학교 대학원 법학과 졸업 (법 사회학 전공)<br />&#8226; 연세대학교 총학생회 부회장 겸 정법대학 학생회 회장<br /><br />&#8226; 대한제당 대표이사 사장, 대표이사 부회장 역임<br />&#8226; 경인방송 대표이사 회장 역임<br />&#8226; 인천시 정무(경제)부시장<br />&#8226; 외교통상부 경제통상대사<br />&#8226; 인천경제시민포럼 이사장 <br />&#8226; 대통령 인수위원회 국가경쟁력강화특위 투자유치 상임자문위원<br /><br />&#8226; 한국학술연구원 이사장(현) <br />&#8226; 죽산 조봉암 선생 명예회복 및 추모기념사업회 이사장(현)<br />&#8226; 대한민국 해군OCS장교중앙회 명예회장 (현)<br />&#8226; 도산안창호선생기념사업회 이사(현)<br />&#8226; 대한민국 해양연맹 부총재(현)<br /><br />[저서] 승자는 달리는 도중 이미 행복하다(2002)<br /><br />1969.		내무부장관 표창<br />1970.		문교부장관 표장<br />1974.		국방부장관 표창<br />1981. 12.	대통령 표창 (수출증대 기여/ 상공부 추천)<br />1996. 12.	산업포장 (농업, 축산산업발전 기여/ 농림부 추천)<br />1998.  5.	인천시 산업평화대상 (노사 평화, 근로자 복지증진)<br />1998. 11.	석탑산업훈장 (무역진흥기여/ 산업자원부 추천)
-							</dd>
-						</dl>
-						<!-- //약력 -->
-					</li>
-					<li class="right">
-						<dl class="pro_detail">
-							<dt>정당</dt>
-							<dd>새누리당</dd>
-							<dt>선거구</dt>
-							<dd>인천 중구동구옹진군</dd>
-							<dt>소속위원회</dt>
-							<dd>
-																									국토교통위원회
-																			 ,
-																										예산결산특별위원회
-																			 ,
-																										지속가능발전 특별위원회
-																								</dd>
-							<dt>당선회수</dt>
-							<dd>재선(
-																									18대
-																			 ,
-																										19대
-																									)</dd>
-							<dt>사무실전화</dt>
-							<dd>
-																	02-788-2126
-                                								
-							</dd>
-							<dt>홈페이지</dt>
-							<dd><a href="http://www.pse.or.kr" target="_blank" title="새창에서 열림">http://www.pse.or.kr</a></dd>
-							<dt>이메일</dt>
-							<dd>separk@assembly.go.kr</dd>
-							<dt>보좌관</dt>
-							<dd>
-								    								    									고성원
-    									    										 ,
-    									    								    									김기준
-    									    																							</dd>
-							<dt>비서관</dt>
-							<dd>
-								    								    									김한상
-    									    										 ,
-    									    								    									한정혁
-    									    																							</dd>
-							<dt>비서</dt>
-							<dd>
-								    								    									장관훈
-    									    										 ,
-    									    								    									김인수
-    									    										 ,
-    									    								    									송경주
-    									    																							</dd>
-							<dt>취미, 특기</dt>
-							<dd>바둑</dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-			<!-- //국회의원 소개 상세내용 -->
-		</div>
-<script>
-function jsShowContent(url){
-	var cpage = url;
-	var fdata = $("#memPopForm").serializeArray();
-	if (cpage != "") {
-		jQuery.ajax
-		({
-			url: cpage,
-			data: fdata,
-			type: 'POST', 
-			cache : false,
-			dataType: 'html',
-			success: function(rtnData) {
-				$("#contentArea").html(rtnData);
-			}
-		});
-	}
-}
-</script>
-
-
-			<!-- //의원실 알림내용 -->
-	</div>
-	<!-- //서브내용 영역 -->
-</div>
-<!-- //mnapop_w -->
-</div>
-</form>
-</html>

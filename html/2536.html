@@ -1,246 +1,0 @@
-
-
-
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title></title>
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
-
-	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
-
-	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
-	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
-	
-	<script type="text/javascript">
-	function jsPopAct(url){
-		var form = document.memPopForm;
-		form.action = url;
-		form.submit();
-	}
-	function jsPopWrite(url){
-		var form = document.memPopForm;
-		if(Validator.validate(form)){
-			form.action = url;
-			form.submit();
-        }
-	}
-	function jsPopDelete(url){
-		var form = document.memPopForm;
-		if(confirm("삭제 하세겠습니까?")){
-			form.action = url;
-			form.submit();
-        }
-	}
-	
-	function jsInnerSite(){
-		alert("업무망에서는 외부링크를 열 수 없습니다.");
-		return false;
-	}
-	</script>
-	
-	
-</head>
-
-<body 
-	
-	
-	>
- 	
-<form id="memPopForm" name="memPopForm" method="post">
-<input type="hidden" name="num" id="num" value="2536">
-<input type="hidden" name="emp_nm" id="emp_nm" value="권성동">
-<input type="hidden" name="dept_cd" id="dept_cd" value="9770679">
-<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
-<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
-<input type="hidden" name="auth_lv" id="auth_lv" value="1">
-<div id="contentArea">
-<!-- mnapop_w -->
-<div id="mnapop_w">
-	<!-- 왼쪽메뉴 -->
-	<div class="snb">
-		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
-		<ul>
-            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
-			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
-        </ul>
-    </div>
-	<!-- //왼쪽메뉴 -->
-	
-	<div class="content">
-		<!-- 상단타이틀 -->
-		<div class="name_title">
-			<div class="name">
-				<h3>권성동 국회의원</h3>
-				<span>
-					
-					
-				</span>
-			</div>
-			<ul class="top_sns">
-				<li>
-					
-						
-							<a href="http://www.twitter.com/ksdd22" target="_blank">
-								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
-							</a>
-						
-					
-				</li>
-				<li>
-					
-				</li>
-			</ul>
-			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
-        </div>
-		<!-- //상단타이틀 -->
-			
-			<!-- 의원실 알림내용 -->
-					<div class="cont_in">
-			<!-- 타이틀 -->
-			<div class="stitle">
-				<h3>국회의원 소개</h3>
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li class="arrow">&gt;</li>
-					<li><a href="#">국회의원 소개</a></li>
-				</ul>
-			</div>
-			<!-- //타이틀 -->	
-			<!-- 국회의원 소개 상세내용 -->
-			<div class="info_mna">
-				<ul>
-					<li class="left">
-    					<!-- 프로필 -->
-    					<div class="profile">
-    						<h4>권성동</h4>
-							<ul>
-								<li class="photo">
-																		<img src="/photo/9770679.jpg" alt="권성동 의원사진" />
-								</li>
-								<li>權性東</li>
-								<li>KWEON Seong Dong</li>
-								<li>1960-04-29</li>
-							</ul>
-						</div>
-						<!-- //프로필 -->
-						<!-- 약력 -->
-						<dl class="per_history">
-							<dt>약력</dt>
-							<dd>
-								1979.02  강릉명륜고등학교 졸업<br />1984.02  중앙대학교 법학과 졸업<br />1986.02  중앙대학교 대학원 (사법전공) 수료<br />1985.11  제 27회 사법시험 합격<br />1988.02  사법연수원 제 17기 수료<br />1991.02  해군법무관 전역<br />1991.03  수원지방검찰청 검사<br />1993.09  춘천지방검찰청 강릉지청 검사<br />1994.03  서울중앙지방검찰청 검사(특수)<br />1996.08  법무부 인권과 검사<br />1999.03  서울동부지방검찰청 검사 &#8729; 부부장검사<br />2000.08  광주지방검찰청 장흥지청장<br />2001.06  서울지방검찰청 부부장검사<br />2002.08  광주지방검찰청 조사부장, 형사 제3부장검사<br />2003.08  서울중앙지검 부부장 검사<br />2004.08  대검찰청 범죄정보 제2담당관<br />2005.04  인천지방검찰청 특별수사부 부장검사<br />2006.02  광주고등검찰청 검사<br />2006.04  의원면직 (법무법인 서정 구성원변호사)<br />2007.04  강릉시 종합자원봉사센터 운영위원<br />2007.06  한나라당 대통령후보 경선 국민검증위원회 실무위원<br />2007.09  2007 선진국민 강원연대  상임대표<br />2007.11  한나라당 클린정치위원회 법률지원단 팀장<br />2008.12  제17대 대통령직인수인위원회 법무행정분과 상근자문위원       <br />2008.07  대통령실 법무비서관<br />2009.10  제18대 국회의원<br />2010~'12 지식경제위원회 위원<br />             한나라당 원내부대표 <br />             예산결산특별위원회 위원<br />             강원도당위원장<br />2012.05  제19대 국회의원<br />            새누리당 정책위 부의장<br />            법제사법위원회 간사<br />            예산결산특별위원회 위원<br />            국회쇄신특별위원회 위원<br />            평창동계올림픽 및 국제경기대회지원 특별위원회 위원
-							</dd>
-						</dl>
-						<!-- //약력 -->
-					</li>
-					<li class="right">
-						<dl class="pro_detail">
-							<dt>정당</dt>
-							<dd>새누리당</dd>
-							<dt>선거구</dt>
-							<dd>강원 강릉시</dd>
-							<dt>소속위원회</dt>
-							<dd>
-																									법제사법위원회
-																			 ,
-																										평창동계올림픽 및 국제경기대회지원 특별위원회
-																								</dd>
-							<dt>당선회수</dt>
-							<dd>재선(
-																									18대
-																			 ,
-																										19대
-																									)</dd>
-							<dt>사무실전화</dt>
-							<dd>
-																	02)784-3396~8 / 788-2469
-                                								
-							</dd>
-							<dt>홈페이지</dt>
-							<dd><a href="http://www.ksdd.net" target="_blank" title="새창에서 열림">http://www.ksdd.net</a></dd>
-							<dt>이메일</dt>
-							<dd>ksdd22@naver.com</dd>
-							<dt>보좌관</dt>
-							<dd>
-								    								    									권통일
-    									    										 ,
-    									    								    									최영철
-    									    																							</dd>
-							<dt>비서관</dt>
-							<dd>
-								    								    									김대식
-    									    										 ,
-    									    								    									황성현
-    									    																							</dd>
-							<dt>비서</dt>
-							<dd>
-								    								    									안청모
-    									    										 ,
-    									    								    									김나래
-    									    										 ,
-    									    								    									이재호
-    									    																							</dd>
-							<dt>취미, 특기</dt>
-							<dd>등산,독서 / 운동</dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-			<!-- //국회의원 소개 상세내용 -->
-		</div>
-<script>
-function jsShowContent(url){
-	var cpage = url;
-	var fdata = $("#memPopForm").serializeArray();
-	if (cpage != "") {
-		jQuery.ajax
-		({
-			url: cpage,
-			data: fdata,
-			type: 'POST', 
-			cache : false,
-			dataType: 'html',
-			success: function(rtnData) {
-				$("#contentArea").html(rtnData);
-			}
-		});
-	}
-}
-</script>
-
-
-			<!-- //의원실 알림내용 -->
-	</div>
-	<!-- //서브내용 영역 -->
-</div>
-<!-- //mnapop_w -->
-</div>
-</form>
-</html>

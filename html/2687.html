@@ -1,240 +1,0 @@
-
-
-
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" dir="ltr">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title></title>
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/css/validator.css" media="screen, projection"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/base.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/bbs.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/popup.css"/>
-	<link rel="stylesheet" type="text/css" href="/resources/web/assm/css/mnapop.css" />
-	<link rel="stylesheet" type="text/css" href="/resources/pms/common/js/jquery/ui.datepicker/css/smoothness/jquery-ui-1.7.2.custom.css"/>
-
-	<script type="text/javascript" src="/resources/pms/common/js/jquery-1.8.1.min.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery/ui.datepicker/ui.datepicker-default-ko.js"></script>
-	<script type="text/javascript" src="/resources/pms/common/js/jquery.maskedinput.js"></script>
-
-	<script type="text/javascript" src="/resources/pms/common/js/pms-common.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/ajax.js" ></script>
-	<script type="text/javascript" src="/resources/pms/common/js/validator.js" ></script>
-	<script type="text/javascript" src="/resources/web/child/js/common.js" ></script>
-	
-	<script type="text/javascript">
-	function jsPopAct(url){
-		var form = document.memPopForm;
-		form.action = url;
-		form.submit();
-	}
-	function jsPopWrite(url){
-		var form = document.memPopForm;
-		if(Validator.validate(form)){
-			form.action = url;
-			form.submit();
-        }
-	}
-	function jsPopDelete(url){
-		var form = document.memPopForm;
-		if(confirm("삭제 하세겠습니까?")){
-			form.action = url;
-			form.submit();
-        }
-	}
-	
-	function jsInnerSite(){
-		alert("업무망에서는 외부링크를 열 수 없습니다.");
-		return false;
-	}
-	</script>
-	
-	
-</head>
-
-<body 
-	
-	
-	>
- 	
-<form id="memPopForm" name="memPopForm" method="post">
-<input type="hidden" name="num" id="num" value="2687">
-<input type="hidden" name="emp_nm" id="emp_nm" value="백재현">
-<input type="hidden" name="dept_cd" id="dept_cd" value="9770573">
-<input type="hidden" name="memnotice_yn_c" id="memnotice_yn_c" value="Y">
-<input type="hidden" name="mempress_yn_c" id="mempress_yn_c" value="Y">
-<input type="hidden" name="auth_lv" id="auth_lv" value="1">
-<div id="contentArea">
-<!-- mnapop_w -->
-<div id="mnapop_w">
-	<!-- 왼쪽메뉴 -->
-	<div class="snb">
-		<h2><a href="#"><img src="/resources/web/assm/images/mnapop/mna_logo.png" alt="대한민국 국회" /></a></h2>
-		<ul>
-            <li><a class="on" href="#" onclick="jsPopAct('/assm/memPop/memPopup.do');return false;">국회의원 소개</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSch/memSch.do');return false;">의사일정</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memCmmtt/memCmmttList.do');return false;">상임위 활동</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memLaw/memLawList.do');return false;">대표발의법률안</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memNotice.do');return false;">의원실 알림</a></li>
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memEvent/memEvent.do');return false;">의원실 행사</a></li>
-			<li><a href="#" onclick="jsPopAct('/assm/memPop/memRecr/memRecr.do');return false;">의원실 채용</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memberPress.do');return false;">언론기사</a></li>
-            
-            
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memSketch/memSketchList.do');return false;">현장스케치</a></li>
-            <li><a href="#" onclick="jsPopAct('/assm/memPop/memBook/memBookList.do');return false;">의원저서</a></li>
-        </ul>
-    </div>
-	<!-- //왼쪽메뉴 -->
-	
-	<div class="content">
-		<!-- 상단타이틀 -->
-		<div class="name_title">
-			<div class="name">
-				<h3>백재현 국회의원</h3>
-				<span>
-					
-					
-				</span>
-			</div>
-			<ul class="top_sns">
-				<li>
-					
-						
-							<a href="http://www.twitter.com/jhok100" target="_blank">
-								<img src="/resources/web/assm/images/mnapop/btn_top_twitter.gif" alt="트위터 바로가기" title="새창에서 열림" />
-							</a>
-						
-					
-				</li>
-				<li>
-					
-				</li>
-			</ul>
-			<a class="close_pop" href="#" onclick="javascript:self.close()">닫기</a>
-        </div>
-		<!-- //상단타이틀 -->
-			
-			<!-- 의원실 알림내용 -->
-					<div class="cont_in">
-			<!-- 타이틀 -->
-			<div class="stitle">
-				<h3>국회의원 소개</h3>
-				<ul>
-					<li><a href="#">HOME</a></li>
-					<li class="arrow">&gt;</li>
-					<li><a href="#">국회의원 소개</a></li>
-				</ul>
-			</div>
-			<!-- //타이틀 -->	
-			<!-- 국회의원 소개 상세내용 -->
-			<div class="info_mna">
-				<ul>
-					<li class="left">
-    					<!-- 프로필 -->
-    					<div class="profile">
-    						<h4>백재현</h4>
-							<ul>
-								<li class="photo">
-																		<img src="/photo/9770573.jpg" alt="백재현 의원사진" />
-								</li>
-								<li>白在鉉</li>
-								<li>BAEK Jae Hyun </li>
-								<li>1951-07-04</li>
-							</ul>
-						</div>
-						<!-- //프로필 -->
-						<!-- 약력 -->
-						<dl class="per_history">
-							<dt>약력</dt>
-							<dd>
-								[주요경력]<br />제18,19대 국회의원(2008.5 ~ )<br />민선2,3기 광명시장<br />경기도의회 통상경제상임위원장<br />광명시의회 초대 시의원<br />카톨릭대학교 행정대학원 겸임교수<br />국가고시 세무사시험(제18회) 합격<br />경기대학교 무역학과 졸업<br /><br />[대표 의정활동]<br />국회 안전행정위 법안소위(2012~)<br />국회 여성가족위 법안소위(2012~)<br />국회 정치개혁특위(2013~)<br />국회 남북발전특위(2013~)<br />국회 평창올림픽지원특위(2013~)<br /><br />아시아인권의원연맹(UNHCR소그룹, 2013~ ) <br />한국아동인구환경의원연맹(CPE, 아동분과 2012~ )<br />아동인권국제기구 UNICEF 국회친구들(2012~ )<br />WEP 세계기아퇴치 SUPPORT 그룹(2012~ )<br />국회 MRA 의원연맹(2012~ )<br />국회 한일의원연맹 재일교포법적지위향상위원회(2012~ ) <br />국회 한*EU 외교협의회 위원(2012~ )<br />국회 한*인디아 친선협회 부회장(2012~ )<br />핵감축을 위한 의원 네트워크(PNND 2012~ )<br />세계군축행동 '세금을 무기대신 복지에' 평화행동 후원의원(2011~ )<br />국제구호NGO WDRO 세계재난구호회 국회 대표후원의원(2011~ )<br />               <br />국회 지방자치포럼 공동대표(2012~)<br />국회 친서민주택정책전문가포럼 공동대표(2010-2011)<br />국회 예산결산특위(2012-2013)<br />국회 지방재정특위(2012)<br />국회 국토해양위 법안소위(2011-2012)<br />국회 국토해양위 예산소위(2010-2012)<br />국회 저출산고령화특위(2011-2012)<br />국회 일자리만들기특위(2010-2011)<br />국회 기획재정위 조세소위(2008-2010)<br />국회 지방행정체제개편특위(2009-2010)<br />국회 미래전략 및 과학기술특위(2008-2009)<br /><br />[각종 수상 및 우수의원 선정]<br /><br />2014 '우수국회의원 연구단체' 대표선정(지방자치포럼)<br />2014 도서관이용 최우수 국회의원(국회도서관)<br />2013 국정감사 우수의원(NGO국감모니터단) <br />2013 국정감사 우수의원(민주당 원내대표)<br />2013 국회 헌정대상(국회의정모니터단) <br />2013 의정활동 우수의원 10인 선정(주간경향)<br />2013 '우수국회의원 연구단체' 대표선정(지방자치포럼)<br />2012 국정감사 우수의원(NGO국감모니터단) <br />2012 입법 및 정책개발 우수의원(국회사무처)<br />2012 국정감사 우수의원(민주당 원내대표)<br />2011 국정감사 우수의원(NGO국감모니터단) <br />2011 율곡대상(국가정치 부문)<br />2011 의정대상(국회의원 부문)<br />2011 국감 우수의원(국토해양위 건설경제신문)<br />2010 상반기 출석율 최우수의원12인(국회 원내대표)<br />2010 하반기 우수참석위원 3인(민주당)<br />2010 국정감사 우수의원(NGO국감모니터단) <br />2010 입법 및 정책개발 우수의원(국회사무처)<br />2008 입법 및 정책개발 우수의원(국회사무처)<br /><br />[정당 및 정책위 경력]<br />민주당 조세정의실천특위(2013~ )<br />민주당 중앙당 예산결산위원장(2012~ )<br />민주당 정책위 수석부의장(2012~ )<br />민주당 여성아동성범죄근절특위(2012~ )<br />민주당 조세개혁특위(2012~ )<br />민주당 정책위부의장(2011-2012, 외교통상*통일*국방부문)<br />민주당 정책위 정책조정위원장(2010-2011)<br />민주당 상설특위 주거복지특위 위원장(2011)<br />주택복지TFT위원장(2011-2012,주택부문 총선/대선공약준비) <br />민주당 정책위 제4정조(예산/기획재정/국토해양)위원장(2010-2011)<br /><br />민주당 원내부대표(2009-2010, 당무)<br />민주당 참좋은지방정부위 간사(2010-현재)<br />민주당 재난대책특위 간사(2011)<br />민주당 정치개혁특위/ 지방행정체제개편특위<br />민주당 전월세대책특위/ 4대강특위 불법 담합조사단장<br />보편적복지 재원조달기획단<br /><br />민주당 중소기업특위 위원장(2012.11-)<br />민주당 통일시대위원회 위원장(2012.11-)<br />민주당 국민통합위 수석부위원장(2012.11-)<br />민주당 경기도당 위원장(2012.6.-2013.5)<br />민주당 경기도당 수석부위원장(2010-2012)<br />민주당 경기도당 공천심사위 위원장(2011)<br />새정치국민회의 / 새천년민주당 창당중앙위원<br />평화민주당 광명갑 부위원장 / 연청중앙회 부회장<br /><br />[지역 및 사회경력]<br />한국청년회의소(JC) 광명회장 <br />평화방송 '세무상담' 생방송 진행<br />광명종합사회복지관 자문위원장<br />광명자원봉사센터 이사장 <br />재단법인 광명애향장학회 이사장<br />광명 경실련 창립위원<br /><br />[기타] <br />*존경하는 인물 <br />임진왜란후 국민부담을 덜기 위해 대동법을 시행하여 불합리한 조세제도를 개혁한<br />조선시대를 대표하는 청백리의 상징, 오리정승 이원익 대감(1547-1634)<br /><br />*인물평  <br />-지역주민들과 함께 해 온 '서민경제통' '조세개혁가'<br />-삶속에서 지역정치를 해 온 '풀뿌리 민주주의의 산증인' <br />-곁눈질 한번하지 않고 한 길을 걸어온 '친근하고 우직한 정치인'<br /><br />*좌우명 <br />최선을 다하며 분수에 맞게 살자<br /><br />*주요저서 <br />-乙을 위한 행진곡2(공저,2013)<br />-힘들수록...! 광명정대(2011)<br />-꿈있는사람은행복을디자인한다(2007)<br />-CEO의 꿈은 희망을 디자인한다(2002)
-							</dd>
-						</dl>
-						<!-- //약력 -->
-					</li>
-					<li class="right">
-						<dl class="pro_detail">
-							<dt>정당</dt>
-							<dd>새정치민주연합</dd>
-							<dt>선거구</dt>
-							<dd>경기 광명시갑</dd>
-							<dt>소속위원회</dt>
-							<dd>
-																									안전행정위원회
-																			 ,
-																										여성가족위원회
-																			 ,
-																										평창동계올림픽 및 국제경기대회지원 특별위원회
-																								</dd>
-							<dt>당선회수</dt>
-							<dd>재선(
-																									18대
-																			 ,
-																										19대
-																									)</dd>
-							<dt>사무실전화</dt>
-							<dd>
-																	784-6398(국회),2619-0410(광명)
-                                								
-							</dd>
-							<dt>홈페이지</dt>
-							<dd><a href="http://www.ok100.or.kr" target="_blank" title="새창에서 열림">http://www.ok100.or.kr</a></dd>
-							<dt>이메일</dt>
-							<dd>jhok100@hanmail.net</dd>
-							<dt>보좌관</dt>
-							<dd>
-																	조윤재(총괄 경영학박사/사회복지사) 이형덕(후원회/지역위)
-															</dd>
-							<dt>비서관</dt>
-							<dd>
-																	김영민(정책 안전행정위)
-															</dd>
-							<dt>비서</dt>
-							<dd>
-																	김준호(의전/홍보) 이지수(정책 여성가족위) 송유미(행정) 한현규(정책)
-															</dd>
-							<dt>취미, 특기</dt>
-							<dd>김영준(사무국장/사회복지사) 이미옥(지역행정)</dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
-			<!-- //국회의원 소개 상세내용 -->
-		</div>
-<script>
-function jsShowContent(url){
-	var cpage = url;
-	var fdata = $("#memPopForm").serializeArray();
-	if (cpage != "") {
-		jQuery.ajax
-		({
-			url: cpage,
-			data: fdata,
-			type: 'POST', 
-			cache : false,
-			dataType: 'html',
-			success: function(rtnData) {
-				$("#contentArea").html(rtnData);
-			}
-		});
-	}
-}
-</script>
-
-
-			<!-- //의원실 알림내용 -->
-	</div>
-	<!-- //서브내용 영역 -->
-</div>
-<!-- //mnapop_w -->
-</div>
-</form>
-</html>
